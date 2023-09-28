@@ -60,7 +60,7 @@ console.log(list);
 // });
 
 // ====
-function createAddRemoveElement() {
+function createAddElement() {
   const li = document.createElement("li");
   // add class to li
   li.className = "todo-list-item";
@@ -83,11 +83,11 @@ function createAddRemoveElement() {
 }
 
 button.addEventListener("click", () => {
-  createAddRemoveElement();
+  createAddElement();
 });
 // enter from keybord
 input.addEventListener("keydown", (e) => {
   if (e.keyCode === 13) {
-    createAddRemoveElement();
+    createAddElement();
   }
 });
